@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../../components/Navbar";
 
-type Props = {}
+type Props = {};
 
 const Home = (props: Props) => {
   return (
-    <div>Home</div>
-  )
-}
+    <div className="mx-14">
+      <Navbar />
+    </div>
+  );
+};
 
-export default Home
+export default Home;

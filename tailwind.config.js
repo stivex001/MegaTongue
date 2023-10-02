@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         "purple-20": "#444BD3",
+        "purple-25": "rgba(68,75,211,0.7)",
         "red-20": "#DB2C2C",
         "dark-20": "#121127",
         "light-text": "rgba(0, 0, 0, 0.49)",
