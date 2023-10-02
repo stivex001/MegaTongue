@@ -1,4 +1,4 @@
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+// import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import CustomButton from "../utils/CustomButton";
@@ -21,9 +21,23 @@ const Navbar = (props: Props) => {
           <Link to="#">API Documentation</Link>
           <Link to="#">Pricing</Link>
         </div>
-        <div className="flex">
+        <div className="flex items-center gap-10">
           <CustomButton className="">Signup</CustomButton>
-          <Bars3Icon />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="22"
+            viewBox="0 0 32 22"
+            fill="none"
+            className="cursor-pointer"
+          >
+            <path
+              d="M31 1H1M31 11H1M31 21H1"
+              stroke="black"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
         </div>
       </div>
     </nav>
