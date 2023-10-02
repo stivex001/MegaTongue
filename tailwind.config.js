@@ -17,6 +17,14 @@ export default {
         "bg-light": "#F2F3FF",
         "bg-btn": "#41C6EC",
       },
+      fontFamily: {
+        poppins: ["poppins", "sans-serif"],
+      },
+      screens: {
+        xs: "480px",
+        sm: "768px",
+        md: "1060px"
+      }
     },
   },
   plugins: [],
