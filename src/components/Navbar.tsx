@@ -48,7 +48,6 @@ const Navbar = (props: Props) => {
             </div>
           </div>
         </div>
-       
       </div>
     </nav>
   );
