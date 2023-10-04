@@ -1,14 +1,15 @@
-import React from "react";
 import Navbar from "../../components/Navbar";
 import Hero from "../../components/Hero";
+import Writing from "../../components/Writing";
 
-type Props = {};
+// type Props = {};
 
-const Home = (props: Props) => {
+const Home = () => {
   return (
     <div className="mx-14">
       <Navbar />
       <Hero />
+      <Writing />
     </div>
   );
 };

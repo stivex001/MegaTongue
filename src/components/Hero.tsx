@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-type Props = {};
+// type Props = {};
 
-const Hero = (props: Props) => {
+const Hero = () => {
   const flexBetween = "flex items-center justify-between";
   const [text, setText] = useState("");
   const [file, setFile] = useState<File | null>(null);
@@ -11,12 +11,12 @@ const Hero = (props: Props) => {
     setText(e.target.value);
   };
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const selectedFile = e.target.files && e.target.files[0];
-    if (selectedFile) {
-      setFile(selectedFile);
-    }
-  };
+  //   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //     const selectedFile = e.target.files && e.target.files[0];
+  //     if (selectedFile) {
+  //       setFile(selectedFile);
+  //     }
+  //   };
 
   const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
