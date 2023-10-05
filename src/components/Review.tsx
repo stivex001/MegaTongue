@@ -1,6 +1,6 @@
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import Card from "./Card";
-import React, { useRef } from "react";
+import  { useRef } from "react";
 
 const Review = () => {
   const flexBetween = "flex items-center justify-between";
@@ -8,14 +8,14 @@ const Review = () => {
 
   const scrollLeft = () => {
     cardContainerRef.current?.scrollBy({
-      left: -200, // Adjust the scroll distance as needed
+      left: -500,
       behavior: "smooth",
     });
   };
 
   const scrollRight = () => {
     cardContainerRef.current?.scrollBy({
-      left: 200, // Adjust the scroll distance as needed
+      left: 500, 
       behavior: "smooth",
     });
   };
@@ -46,10 +46,10 @@ const Review = () => {
           </div>
         </div>
         <div
-          className="flex items-center gap-6 mt-[41px] overflow-hidden"
+          className="flex items-center gap-6 mt-[41px] overflow-hidden card-container"
           style={{
             overflowX: "scroll",
-            scrollbarWidth: "none", // Hide the scrollbar for Firefox
+            scrollbarWidth: "none",
             WebkitOverflowScrolling: "touch",
           }}
           ref={cardContainerRef}
