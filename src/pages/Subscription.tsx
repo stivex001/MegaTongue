@@ -31,14 +31,12 @@ const Subscription = () => {
         not="Unsubscribed"
       />
        <SubscriptionInfo
-        title="Current::"
+        title="Current:"
         desc="No payment methods on file"
-        api="Email:"
-        apiDesc="odejinmipromise@gmail.com"
-        company="Company"
-        comName="5Star Inn Company"
-        notification="Notifications:"
-        not="Unsubscribed"
+        api="Billing period:"
+        apiDesc="2023-09-01 - 2023-09-30"
+        company="Total Due:"
+        comName="$0.00"
       />
     </div>
   );
