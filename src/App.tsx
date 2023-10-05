@@ -6,6 +6,7 @@ import ProtectedRoute from "./ProtectedRoute";
 import Layout from "./Layout";
 import Subscription from "./pages/Subscription";
 import Pricing from "./pages/Pricing";
+import ApisUsage from "./pages/ApisUsage";
 
 function App() {
   const router = createBrowserRouter([
@@ -28,6 +29,10 @@ function App() {
         {
           path: "/pricing",
           element: <Pricing />
+        },
+        {
+          path: "/api-usage",
+          element: <ApisUsage />
         },
       ]
     },

@@ -111,7 +111,7 @@ const Navbar = () => {
                               Payment{" "}
                             </Link>
                             <Link
-                              to="/"
+                              to="/api-usage"
                               className=" text-base font-normal hover:text-purple-20 transition"
                               onClick={() => setShowMenuList(false)}
                             >
@@ -239,7 +239,7 @@ const Navbar = () => {
                           Payment{" "}
                         </Link>
                         <Link
-                          to="/"
+                          to="/api-usage"
                           className=" text-base font-normal hover:text-purple-20 transition"
                           onClick={() => setShowMenuList(false)}
                         >
