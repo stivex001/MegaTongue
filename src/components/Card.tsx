@@ -1,8 +1,6 @@
-import React from "react";
+// type Props = {};
 
-type Props = {};
-
-const Card = (props: Props) => {
+const Card = () => {
   return (
     <div className="bg-white shadow-lg py-8 px-6 ">
       <div className="flex flex-col gap-8 w-[356px]">
@@ -13,10 +11,16 @@ const Card = (props: Props) => {
         </p>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="https://avatars.githubusercontent.com/u/87942124?v=4" alt="" className="w-[48px] h-[48px] rounded-full object-cover"/>
+            <img
+              src="https://avatars.githubusercontent.com/u/87942124?v=4"
+              alt=""
+              className="w-[48px] h-[48px] rounded-full object-cover"
+            />
             <div>
               <p className="text-sm font-semibold">Kristin Watson</p>
-              <span className="text-xs font-normal text-gray-400 whitespace-nowrap">Jun 27, 2020 · 6 min read</span>
+              <span className="text-xs font-normal text-gray-400 whitespace-nowrap">
+                Jun 27, 2020 · 6 min read
+              </span>
             </div>
           </div>
           <div className="flex items-center">
