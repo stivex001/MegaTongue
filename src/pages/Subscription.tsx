@@ -1,10 +1,16 @@
 // import React from 'react'
 
+import ApiAccessKey from "../components/ApiAccessKey"
+import Hero from "../components/Hero"
+
 // type Props = {}
 
 const Subscription = () => {
   return (
-    <div>Subscription</div>
+    <div className="flex flex-col gap-7">
+      <Hero />
+      <ApiAccessKey />
+    </div>
   )
 }
 
