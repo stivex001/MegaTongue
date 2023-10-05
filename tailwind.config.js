@@ -10,7 +10,6 @@ export default {
         "dark-20": "#121127",
         "light-text": "rgba(0, 0, 0, 0.49)",
         "light-green": "#12B76A",
-        "light-green": "#12B76A",
         "dark-blue": "#1C1C1C",
         "light-gray": "#858585",
         "bg-purple": "rgba(162, 89, 255, 0.42)",
