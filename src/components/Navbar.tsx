@@ -22,16 +22,16 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex items-center gap-2.5">
               <img src={Logo} alt="megatongue" className="w-12 h-12" />
-              <span className="text-purple-20 text-2xl font-poppins font-semibold">
+              <Link to="/" className="text-purple-20 text-2xl font-poppins font-semibold">
                 MegaTongue
-              </span>
+              </Link >
             </div>
 
             {/* Right Side */}
             {isAboveMediaScreen ? (
               <div className={`${flexBetween} w-full`}>
                 <div className={`${flexBetween} gap-8 text-xl font-normal`}>
-                  <Link to="#">Pricing</Link>
+                  <Link to="subscription-plan">Pricing</Link>
                   <Link to="#">API Documentation</Link>
                   <Link to="#">Pricing</Link>
                 </div>
