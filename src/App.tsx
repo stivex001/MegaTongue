@@ -5,6 +5,7 @@ import SignUp from "./pages/Auth/SignUp";
 import ProtectedRoute from "./ProtectedRoute";
 import Layout from "./Layout";
 import Subscription from "./pages/Subscription";
+import Pricing from "./pages/Pricing";
 
 function App() {
   const router = createBrowserRouter([
@@ -23,6 +24,10 @@ function App() {
         {
           path: "/subscription-plan",
           element: <Subscription />
+        },
+        {
+          path: "/pricing",
+          element: <Pricing />
         },
       ]
     },

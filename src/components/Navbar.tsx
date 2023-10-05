@@ -38,7 +38,6 @@ const Navbar = () => {
     };
   }, []);
 
-
   return (
     <nav>
       <div className={`${flexBetween} fixed top-0 z-30 w-full py-6 bg-white`}>
@@ -59,9 +58,9 @@ const Navbar = () => {
             {isAboveMediaScreen ? (
               <div className={`${flexBetween} w-full`}>
                 <div className={`${flexBetween} gap-8 text-xl font-normal`}>
-                  <Link to="#">Pricing</Link>
+                  <Link to="/pricing">Pricing</Link>
                   <Link to="#">API Documentation</Link>
-                  <Link to="#">Pricing</Link>
+                  {/* <Link to="#">Pricing</Link> */}
                 </div>
                 <div className={`${flexBetween} gap-8 text-xl font-normal`}>
                   <div className="relative">
@@ -129,7 +128,7 @@ const Navbar = () => {
                       </div>
                     )}
                   </div>
-                  <svg
+                  {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
                     height="22"
@@ -143,7 +142,7 @@ const Navbar = () => {
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
-                  </svg>
+                  </svg> */}
                 </div>
               </div>
             ) : (
@@ -186,9 +185,9 @@ const Navbar = () => {
             <div
               className={`flex flex-col gap-8 text-xl font-normal text-white`}
             >
-              <Link to="#">Pricing</Link>
+              <Link to="/pricing">Pricing</Link>
               <Link to="#">API Documentation</Link>
-              <Link to="#">Pricing</Link>
+              {/* <Link to="#">Pricing</Link> */}
             </div>
             <div className={`flex flex-col gap-8 text-xl font-normal `}>
               <div></div>
@@ -200,10 +199,65 @@ const Navbar = () => {
                   Signup
                 </CustomButton>
 
-                <div className="bg-red-500">gdugydgygdyg</div>
+                {showMenuList && (
+                  <div className="absolute w-[172px] bg-white shadow-md">
+                    <div className="py-3 px-2">
+                      <div className="flex flex-col gap-2 ">
+                        <Link
+                          to="/"
+                          className=" text-base font-normal hover:text-purple-20 transition"
+                          onClick={() => setShowMenuList(false)}
+                        >
+                          Home
+                        </Link>
+                        <Link
+                          to="/"
+                          className=" text-base font-normal hover:text-purple-20 transition"
+                          onClick={() => setShowMenuList(false)}
+                        >
+                          Upgrade
+                        </Link>
+                        <Link
+                          to="/subscription-plan"
+                          className=" text-base font-normal hover:text-purple-20 transition"
+                          onClick={() => setShowMenuList(false)}
+                        >
+                          Subscription Plan
+                        </Link>
+                        <Link
+                          to="/"
+                          className=" text-base font-normal hover:text-purple-20 transition"
+                          onClick={() => setShowMenuList(false)}
+                        >
+                          Account{" "}
+                        </Link>
+                        <Link
+                          to="/"
+                          className=" text-base font-normal hover:text-purple-20 transition"
+                          onClick={() => setShowMenuList(false)}
+                        >
+                          Payment{" "}
+                        </Link>
+                        <Link
+                          to="/"
+                          className=" text-base font-normal hover:text-purple-20 transition"
+                          onClick={() => setShowMenuList(false)}
+                        >
+                          API Usage{" "}
+                        </Link>
+                        <Link
+                          to="/"
+                          className=" text-base font-normal hover:text-purple-20 transition"
+                        >
+                          Signout{" "}
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
 
-              <svg
+              {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
                 height="22"
@@ -217,7 +271,7 @@ const Navbar = () => {
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />
-              </svg>
+              </svg> */}
             </div>
           </div>
         </div>

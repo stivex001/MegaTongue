@@ -8,6 +8,11 @@ type Props = {
   notification?: string;
   comName?: string;
   not?: string;
+  apUsages?: string;
+  apDesc?: string;
+  apii?: string;
+  billing?: string;
+  bill?: string;
 };
 
 const SubscriptionInfo = ({
@@ -20,6 +25,11 @@ const SubscriptionInfo = ({
   notification,
   comName,
   not,
+  apDesc,
+  apUsages,
+  apii,
+  billing,
+  bill
 }: Props) => {
   return (
     <section className={` mx-auto w-5/6  md:h-full md:pb-0 border `}>
@@ -35,6 +45,21 @@ const SubscriptionInfo = ({
               {apiDesc}
               <span className="text-purple-20 font-semibold text-[18px]">
                 {apiUsages}
+              </span>
+            </span>
+          </div>
+          <div className="flex items-center gap-9">
+            <p className="text-dark-20 font-bold text-xl w-[137px] whitespace-nowrap">{billing} </p>
+            <span className="text-dark-20 text-xl font-light">{bill} </span>
+          </div>
+          <div className="flex items-center gap-9">
+            <p className="text-dark-20 font-bold text-xl w-[137px] whitespace-nowrap">
+              {apii}
+            </p>
+            <span className="text-dark-20 text-xl font-light">
+              {apDesc}
+              <span className="text-purple-20 font-semibold text-[18px]">
+                {apUsages}
               </span>
             </span>
           </div>
