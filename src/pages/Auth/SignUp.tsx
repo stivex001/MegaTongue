@@ -36,7 +36,7 @@ const SignUp = () => {
             <div className="text-5xl font-bold mb-8 text-purple-20">
               Create Account
             </div>
-            <form>
+            <form className="">
               <div className=" md:flex items-center gap-5">
                 <div className="mb-4">
                   <label
