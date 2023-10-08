@@ -1,3 +1,5 @@
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/landingPage/Home";
 import Login from "./pages/Auth/Login";
@@ -24,17 +26,17 @@ function App() {
         },
         {
           path: "/subscription-plan",
-          element: <Subscription />
+          element: <Subscription />,
         },
         {
           path: "/pricing",
-          element: <Pricing />
+          element: <Pricing />,
         },
         {
           path: "/api-usage",
-          element: <ApisUsage />
+          element: <ApisUsage />,
         },
-      ]
+      ],
     },
     {
       path: "/login",
@@ -49,6 +51,11 @@ function App() {
   return (
     <>
       <div>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+        />
         <RouterProvider router={router} />
       </div>
     </>
