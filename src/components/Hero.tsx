@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useAppSelector } from "../hooks/hooks";
 
 // type Props = {};
 
@@ -6,6 +7,11 @@ const Hero = () => {
   const flexBetween = "flex items-center justify-between";
   const [text, setText] = useState("");
   const [file, setFile] = useState<File | null>(null);
+
+  const auth = useAppSelector((state) => state.auth)
+
+  console.log(auth, "auth");
+  
 
   const handleTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setText(e.target.value);
