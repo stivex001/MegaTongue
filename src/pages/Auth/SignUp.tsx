@@ -1,7 +1,19 @@
 import { Link } from "react-router-dom";
 import pics from "../../assets/Group 1.png";
+import { useState } from "react";
 
 const SignUp = () => {
+  const [user, setUser] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
+
+  console.log(user, "ysdgygsd");
+  
+
   return (
     <div className="min-h-screen ">
       <div className="flex h-screen">
@@ -48,10 +60,13 @@ const SignUp = () => {
                   <div className="flex items-center justify-between w-full border rounded-md py-2 px-3 focus:outline-none focus:border-blue-500">
                     <input
                       type="text"
-                      id="firstName"
-                      name="firstName"
+                      id="firstname"
+                      name="firstname"
                       placeholder="John"
                       className="focus:outline-none"
+                      onChange={(e) =>
+                        setUser({ ...user, firstname: e.target.value })
+                      }
                     />
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -79,10 +94,13 @@ const SignUp = () => {
                   <div className="flex items-center justify-between w-full border rounded-md py-2 px-3 focus:outline-none focus:border-blue-500">
                     <input
                       type="text"
-                      id="LastName"
-                      name="LastName"
+                      id="lastname"
+                      name="lastname"
                       placeholder="Doe"
                       className="focus:outline-none"
+                      onChange={(e) =>
+                        setUser({ ...user, lastname: e.target.value })
+                      }
                     />
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -116,6 +134,9 @@ const SignUp = () => {
                     name="email"
                     placeholder="johndoe@gmail.com"
                     className="focus:outline-none"
+                    onChange={(e) =>
+                      setUser({ ...user, email: e.target.value })
+                    }
                   />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -148,6 +169,9 @@ const SignUp = () => {
                       name="password"
                       placeholder="John"
                       className="focus:outline-none"
+                      onChange={(e) =>
+                        setUser({ ...user, password: e.target.value })
+                      }
                     />
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -175,10 +199,13 @@ const SignUp = () => {
                   <div className="flex items-center justify-between w-full border rounded-md py-2 px-3 focus:outline-none focus:border-blue-500">
                     <input
                       type="password"
-                      id="password"
-                      name="password"
+                      id="confirmPassword"
+                      name="confirmPassword"
                       placeholder="Doe"
                       className="focus:outline-none"
+                      onChange={(e) =>
+                        setUser({ ...user, confirmPassword: e.target.value })
+                      }
                     />
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -244,7 +271,13 @@ const SignUp = () => {
             </form>
 
             <p className="text-[rgba(49, 46, 129, 0.80)] text-center text-[18px] font-normal">
-              Already a member? <Link to="/login" className="text-purple-20 text-[18px] font-bold">Sign In</Link>
+              Already a member?{" "}
+              <Link
+                to="/login"
+                className="text-purple-20 text-[18px] font-bold"
+              >
+                Sign In
+              </Link>
             </p>
           </div>
         </div>
